@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Century Gothic Pro";
+  src: local("Century Gothic Pro"), local("CenturyGothicPro"),
+    local("Century Gothic");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Libre Baskerville"),
+    local("BaskervilleBT-Roman");
+  font-weight: 400;
+  font-style: normal;
+}
