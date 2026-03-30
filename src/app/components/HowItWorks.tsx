@@ -44,6 +44,8 @@ function StepBadge({
       className="relative flex h-[270px] w-[328px] shrink-0 flex-col overflow-hidden"
       style={{
         backgroundColor: "rgba(255, 255, 255, 0.3)",
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)",
         borderRadius: isRight
           ? "0 20px 20px 100px"
           : "20px 0 100px 20px",
@@ -110,7 +112,15 @@ export default function HowItWorks() {
 
       <div className="flex w-[1148px] flex-col gap-[36px]">
         {/* Step 1: Upload Any Mark */}
-        <div className="flex items-center gap-[36px] rounded-[20px] bg-[#fdfdff]">
+        <div
+          className="flex items-center gap-[36px] rounded-[20px]"
+          style={{
+            backgroundColor: "rgba(253, 253, 255, 0.6)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.08)",
+          }}
+        >
           <StepBadge
             number={1}
             icon={imgFileDownload}
@@ -140,7 +150,15 @@ export default function HowItWorks() {
         </div>
 
         {/* Step 2: Instant Analysis */}
-        <div className="flex items-center justify-between rounded-[20px] bg-[#fdfdff]">
+        <div
+          className="flex items-center justify-between rounded-[20px]"
+          style={{
+            backgroundColor: "rgba(253, 253, 255, 0.6)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.08)",
+          }}
+        >
           <div className="flex w-[820px] items-center justify-center gap-[10px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -171,7 +189,15 @@ export default function HowItWorks() {
         </div>
 
         {/* Step 3: Clear Results */}
-        <div className="flex items-center rounded-[20px] bg-[#fdfdff]">
+        <div
+          className="flex items-center rounded-[20px]"
+          style={{
+            backgroundColor: "rgba(253, 253, 255, 0.6)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.08)",
+          }}
+        >
           <StepBadge
             number={3}
             icon={imgRocketship}
